@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<script>
+function validate()
+{
+	var name=document.getElementById("name").value;
+	
+	var items=document.getElementsByName('option');
+	var selectedItems="";
+	for(var i=0; i<items.length; i++){
+		if(items[i].type=='checkbox' && items[i].checked==true)
+			selectedItems+=items[i].value+"\n";
+	}
+	alert(selectedItems);
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Name: <input type="text" id="name"><br>
+Platform: <br>
+	<input type="checkbox" name="option", value="Java">Java<br>
+ 	<input type="checkbox" name="option", value="Python">Python<br>
+  	<input type="checkbox" name="option", value="Javascript">Javascript<br>
+  
+<button onclick='validate()'>Register</button>
+</body>
+</html>
