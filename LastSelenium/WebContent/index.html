@@ -16,11 +16,6 @@ function validate(){
 		{
 		alert("Enter a valid number");
 		}
-	if(age<18)
-		{
-		alert("Not legal age")
-		return ;
-		}
 }
 </script>
 <meta charset="ISO-8859-1">
@@ -31,18 +26,17 @@ function validate(){
 <form name="myForm" action="Project.html">
 	EmpNo: 	<input type="number" id="empno"><br>
 	Name:&nbsp; <input type="text" id="name"><br>
-	Age:&nbsp;&nbsp;<input type="number" id="age"><br>
-	City: 	<select>
+	City: 	<select id="city">
 		<option>Lucknow</option>
 		<option>Kanpur</option>
 		<option>Pune</option>
 	</select><br>
-	State: <select>
+	State: <select id="state">
 		<option>Andhra Pradesh</option>
 		<option>Maharastra</option>
 		<option>Uttar Pradesh</option>
 	</select>
-	<button onclick= "validate()"  >Sub</button>
+	<button onclick= "validate()"  id="btnsubmit">Submit</button>
 	
 </form>
 </body>
